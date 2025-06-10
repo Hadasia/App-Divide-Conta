@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-import {
-  View, Text, TextInput, TouchableOpacity,
-  StyleSheet, SafeAreaView, KeyboardAvoidingView,
-  TouchableWithoutFeedback, Keyboard, Platform,
-} from 'react-native';
+import {View, Text, TextInput, TouchableOpacity,StyleSheet, SafeAreaView, KeyboardAvoidingView,TouchableWithoutFeedback, Keyboard, Platform,} from 'react-native';
 
 export default function App() {
   const [total, setTotal] = useState('');
@@ -64,13 +60,7 @@ export default function App() {
           />
 
           <TextInput
-            style={styles.input}
-            keyboardType="numeric"
-            placeholder="Gorjeta (%) [opcional]"
-            placeholderTextColor="#a28fc4"
-            value={gorjeta}
-            onChangeText={setGorjeta}
-          />
+            style={styles.input} keyboardType="numeric" placeholder="Gorjeta [opcional]" placeholderTextColor="#a28fc4" value={gorjeta} onChangeText={setGorjeta}/>
 
           <View style={styles.buttonRow}>
             <TouchableOpacity style={styles.button} onPress={calcular}>
@@ -91,7 +81,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f3e5f5', // lilás claro
+    backgroundColor: '#e3f2fd', 
     paddingHorizontal: 20,
   },
   inner: {
@@ -101,20 +91,20 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 32,
     fontWeight: 'bold',
-    color: '#7e57c2',
+    color: '#0d47a1', 
     textAlign: 'center',
     marginBottom: 30,
   },
   input: {
-    backgroundColor: '#ede7f6',
+    backgroundColor: '#ffffff',
     borderRadius: 10,
     paddingHorizontal: 15,
     paddingVertical: 12,
     fontSize: 16,
     marginBottom: 15,
     borderWidth: 1,
-    borderColor: '#b39ddb',
-    color: '#5e35b1',
+    borderColor: '#90caf9', 
+    color: '#0d47a1',
     width: '90%',
     alignSelf: 'center',
   },
@@ -125,14 +115,14 @@ const styles = StyleSheet.create({
   },
   button: {
     flex: 1,
-    backgroundColor: '#9575cd',
+    backgroundColor: '#64b5f6', 
     paddingVertical: 14,
     borderRadius: 10,
     alignItems: 'center',
     marginHorizontal: 5,
   },
   clearButton: {
-    backgroundColor: '#d1c4e9',
+    backgroundColor: '#bbdefb', 
   },
   buttonText: {
     color: '#fff',
@@ -140,12 +130,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   clearButtonText: {
-    color: '#6a1b9a',
+    color: '#1565c0', 
   },
   resultado: {
     textAlign: 'center',
     fontSize: 18,
     fontWeight: '600',
-    color: '#512da8',
+    color: '#1e88e5', 
   },
 });
